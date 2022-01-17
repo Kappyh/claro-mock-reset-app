@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1{
+    color: #e3262e;
+    text-align: center;
+}
+
+#actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: #f09905;
+    color: black;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+button:first-child{
+    font-weight: bold;
+}
