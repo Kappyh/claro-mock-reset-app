@@ -4,18 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
   <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
   <link rel="stylesheet" href="./styles/index.css">
   <title>Claro Mock Reset</title>
 </head>
 <body>
 
-<h1>Claro Pre Mock Reset</h1>
+<h1>Claro Pré Mock Reset</h1>
 
-<div id="actions">
-  <button id="QA-reset">Reset QA Mock</button>
-  <button id="Others-reset">Reset Others Mock</button>
-</div>
+<section id="actions">
+  <button id="QA-reset" class="waves-effect waves-light btn">Reset QA Mock</button>
+  <button id="Others-reset" class="waves-effect waves-light btn">Reset Others Mock</button>
+</section>
 
+
+<footer class="app-footer">
+  <section>
+    <a id="help-link">Ajuda</a>
+    <a>Sobre o app</a>
+  </section>
+  <section>Versão 1.0.0</section>
+</footer>
+<script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script src="./services/firebase.js"></script>
 <script src="./render.js"></script>
 </body>
 </html>

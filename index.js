@@ -6,8 +6,10 @@ try {
     require('electron-reloader')(module)
 } catch (_) {}
 
+let win;
+
 const createWindow = () =>{
-    const win = new BrowserWindow({
+    win = new BrowserWindow({
         width: 800,
         height: 600,
         webPreferences: {

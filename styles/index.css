@@ -5,11 +5,16 @@ body{
     padding: 0;
     margin: 0;
     font-size: 16px;
+    background-color: #eeeaea;
 }
 
 h1{
     color: #e3262e;
     text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8rem;
 }
 
 #actions{
@@ -19,12 +24,44 @@ h1{
     justify-content: center;
 }
 button{
-    background-color: #f09905;
+    background-color: #f09905 !important;
     color: black;
     border: none;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    min-width: 400px;
+    min-height: 50px;
+    margin-bottom: 3rem;
 }
 button:first-child{
+    background-color: #e3262e !important;
     font-weight: bold;
+}
+
+.app-footer{
+    width: 100%;
+    clear: both;
+    bottom: 0;
+    color: #ffffff;
+    font-weight: lighter;
+    position: fixed;
+    min-height: 70px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e3262e;
+}
+.app-footer>section:first-child{
+    text-decoration: none;
+    align-self: center;
+}
+.app-footer>section:first-child>a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white !important;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.app-footer>section:nth-child(2){
+    margin-right: 10px;
+    align-self: end;
 }

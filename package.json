@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "App for reset claro pre mock",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -25,7 +26,8 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "materialize-css": "^1.0.0-rc.2"
   },
   "config": {
     "forge": {
