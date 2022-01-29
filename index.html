@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="Content-Security-Policy"
+        content=";style-src * 'unsafe-inline';style-src-elem 'self'; script-src 'self' https://node-express-firebase-ps8.herokuapp.com/* https://fonts.googleapis.com/*">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
   <link rel="stylesheet" href="./styles/index.css">
@@ -27,6 +27,7 @@
   <section>Versão 1.0.0</section>
 </footer>
 <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script src="./node_modules/axios/dist/axios.min.js"></script>
 <script src="./services/firebase.js"></script>
 <script src="./render.js"></script>
 </body>
