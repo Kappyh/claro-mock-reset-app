@@ -35,6 +35,11 @@ header>a{
 }
 /*Header fim*/
 
+.content{
+    align-self: center;
+    width: 400px;
+    margin-top: 3rem;
+}
 
 
 /*Footer Inicio*/

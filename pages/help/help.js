@@ -1,9 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // var elems = document.querySelectorAll('.collapsible');
-    // var instances = M.Collapsible.init(elems, options);
-    console.log('teste');
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
 });
-
-document.addEventListener('load', ()=>{
-    console.log('hello')
-})
