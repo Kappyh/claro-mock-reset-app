@@ -49,7 +49,11 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "options": {
+              "icon": "./logo_-mock.ico"
+            }
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
