@@ -31,7 +31,9 @@
   },
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "./claro_pre_logo.icns"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",

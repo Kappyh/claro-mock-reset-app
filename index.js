@@ -15,6 +15,7 @@ const createWindow = () =>{
     win = new BrowserWindow({
         width: 800,
         height: 600,
+        icon: __dirname+'logo_-mock.ico',
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
@@ -22,6 +23,8 @@ const createWindow = () =>{
             slashes:true
         }
     });
+
+
     win.webContents.session.webRequest.onBeforeSendHeaders(
         (details, callback) => {
             callback({ requestHeaders: { Origin: '*', ...details.requestHeaders } });
