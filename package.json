@@ -32,7 +32,8 @@
   "config": {
     "forge": {
       "packagerConfig": {
-        "icon": "./claro_pre_logo.icns"
+        "icon": "./claro_pre_logo.icns",
+        "asar": true
       },
       "makers": [
         {
@@ -51,7 +52,7 @@
           "name": "@electron-forge/maker-deb",
           "config": {
             "options": {
-              "icon": "./logo_-mock.ico"
+              "icon": "./claro_pre_logo.ico"
             }
           }
         },

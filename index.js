@@ -15,7 +15,7 @@ const createWindow = () =>{
     win = new BrowserWindow({
         width: 800,
         height: 600,
-        icon: __dirname+'logo_-mock.ico',
+        icon: __dirname+'claro_pre_logo.ico',
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
