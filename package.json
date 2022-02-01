@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "dotenv": "^15.0.0",
     "electron-squirrel-startup": "^1.0.0",
     "materialize-css": "^1.0.0-rc.2"
   },

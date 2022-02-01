@@ -7,9 +7,10 @@ async function updateStatus(num) {
     const phoneNumber = `${init}${num}`;
     foneNumberInit = 100
     numberEND = 300;
+
     await axios
         .put(
-            `https://node-express-firebase-ps8.herokuapp.com/api/v1/customers/${phoneNumber}`
+            `${process.env.MOCK_URL}${phoneNumber}`
         )
         .then(function (response) {
             console.log(response.data, `${phoneNumber}`);
