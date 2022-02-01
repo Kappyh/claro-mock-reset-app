@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { app , session, BrowserWindow } = require('electron');
 const path = require('path');
 
@@ -20,11 +21,9 @@ const createWindow = () =>{
             preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
             contextIsolation: false,
-            slashes:true,
-            devTools: false,
+            slashes:true
         }
     });
-
 
     win.webContents.session.webRequest.onBeforeSendHeaders(
         (details, callback) => {
