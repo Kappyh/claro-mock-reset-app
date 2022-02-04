@@ -5,9 +5,6 @@ const axios = require('axios');
 
 async function updateStatus(num) {
     const phoneNumber = `${init}${num}`;
-    foneNumberInit = 100
-    numberEND = 300;
-
     await axios
         .put(
             `${process.env.MOCK_URL}${phoneNumber}`
@@ -22,10 +19,12 @@ async function updateStatus(num) {
 
 async function runUpdateQA() {
     console.log("INICIO");
+    foneNumberInit = 100
+    numberEND = 300;
     for (let i = foneNumberInit; i <= numberEND; i++) {
         await updateStatus(i);
     }
-    console.log("FIM");
+    return console.log("FIM");
 }
 
 async function runtUpdateOthers(){
