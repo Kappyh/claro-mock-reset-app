@@ -35,6 +35,13 @@ button:first-child{
     background-color: #e3262e !important;
     font-weight: bold;
 }
+.spinner-feedback{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    align-items:center;
+}
 
 .app-footer{
     width: 100%;
