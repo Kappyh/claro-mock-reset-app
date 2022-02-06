@@ -36,8 +36,8 @@ seguindo o modelo do PR existente.
 o retorno do mantainer do projeto para verificar se não existe
 uma release com este issue resolvido.
 - Padrão do nome do branch da issue:
-```issue/4-build-squirrel```
-tipo de problema/numero da issue-titulo
+```issue-4/build-squirrel```
+tipo de problema-numero da issue/titulo
 
 ### Scripts
 
