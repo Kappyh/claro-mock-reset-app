@@ -26,6 +26,8 @@ const createWindow = () =>{
         }
     });
 
+    win.setMenuBarVisibility(false);
+
     win.webContents.session.webRequest.onBeforeSendHeaders(
         (details, callback) => {
             callback({ requestHeaders: { Origin: '*', ...details.requestHeaders } });
